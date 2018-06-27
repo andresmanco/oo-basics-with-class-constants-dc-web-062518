@@ -5,16 +5,15 @@ class Shoe
   BRANDS = []
   def initialize(brand)
     @brand = brand
-    find = false
+    found = false
     BRANDS.each do |b|
       if b == brand
-        find = true 
+        found = true 
       end
     end
     if found == false
-        
-        
-    BRANDS << @brand
+      BRANDS << brand
+    end
   end
 
   def cobble
