@@ -5,6 +5,15 @@ class Shoe
   BRANDS = []
   def initialize(brand)
     @brand = brand
+    find = false
+    BRANDS.each do |b|
+      if b == brand
+        find = true 
+      end
+    end
+    if found == false
+        
+        
     BRANDS << @brand
   end
 
